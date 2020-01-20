@@ -1,32 +1,26 @@
 let userInput = prompt('Укажите страну для доставки!');
-'userinput before: ', userInput;
 const normalizedInput = userInput.toLowerCase();
-'userinput after: ', userInput;
-'normalizedInput: ', normalizedInput;
-let price = 0;
 switch (normalizedInput) {
     case 'китай':
-        price = 100;
+        console.log(`Доставка в ${normalizedInput} будет стоить 100 кредитов`);
         break;
 
     case 'чили':
-        price = 250;
+        console.log(`Доставка в ${normalizedInput} будет стоить 250 кредитов`);
         break;
 
     case 'австралия':
-        price = 170;
+        console.log(`Доставка в ${normalizedInput} будет стоить 170 кредитов`);
         break;
 
     case 'индия':
-        price = 80;
+        console.log(`Доставка в ${normalizedInput} будет стоить 80 кредитов`);
         break;
 
     case 'ямайка':
-        price = 120;
+        console.log(`Доставка в ${normalizedInput} будет стоить 120 кредитов`);
         break;
 
     default:
         alert('В вашей стране доставка не доступна');
 }
-let message = `Доставка в ${normalizedInput} будет стоить ${price} кредитов`;
-console.log(message);

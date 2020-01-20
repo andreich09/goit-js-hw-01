@@ -1,7 +1,7 @@
 let credits = 23580;
 const pricePerDroid = 3000;
 let userInput = prompt('Введите количество дроидов для покупки');
-let totalPrice = userInput * pricePerDroid;
+let totalPrice = Number(userInput) * pricePerDroid;
 let balance = credits - totalPrice;
 let message;
 if (userInput === null) {
